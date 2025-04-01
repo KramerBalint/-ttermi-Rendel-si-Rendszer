@@ -27,10 +27,10 @@ namespace Éttermi_Rendelési_Rendszer
         {
             for (int i = 0; i < rendeles.Count; i++)
             {
-                Console.WriteLine(rendeles[i].GetNev() + " " + rendeles[i].GetAr());
+                Console.WriteLine(rendeles[i].nev + " " + rendeles[i].ar);
             }
             int osszeg = 0;
-            rendeles.ForEach(x => osszeg += x.GetAr());
+            rendeles.ForEach(x => osszeg += x.ar);
             Console.WriteLine("A rendelés összege: " + osszeg);
         }
     }

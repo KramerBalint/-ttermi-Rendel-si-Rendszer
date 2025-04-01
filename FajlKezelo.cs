@@ -27,7 +27,7 @@ namespace Éttermi_Rendelési_Rendszer
             {
                 foreach (var elem in menu)
                 {
-                    sw.WriteLine($"{elem.GetNev()};{elem.GetAr()};{elem.GetKategoria()}");
+                    sw.WriteLine($"{elem.nev};{elem.ar};{elem.kategoria}");
                 }
             }
         }

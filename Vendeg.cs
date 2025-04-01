@@ -39,7 +39,7 @@ namespace Éttermi_Rendelési_Rendszer
         public void RendelesTorlese()
         {
             int osszeg = 0;
-            rendeles.ForEach(x => osszeg += x.GetAr());
+            rendeles.ForEach(x => osszeg += x.ar);
             Console.WriteLine("A rendelés összege: " + osszeg);
             File.WriteAllText("rendelesek.txt", string.Empty);
             rendeles.Clear();

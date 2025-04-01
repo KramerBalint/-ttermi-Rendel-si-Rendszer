@@ -9,40 +9,14 @@ namespace Éttermi_Rendelési_Rendszer
 {
     class MenuElem
     {
-        public string nev;
-        public int ar;
-        public string kategoria;
+        public string nev { get; set; }
+        public int ar { get; set; }
+        public string kategoria { get; set; }
+
         public MenuElem(string nev, int ar, string kategoria)
         {
             this.nev = nev;
             this.ar = ar;
-            this.kategoria = kategoria;
-        }
-
-        public string GetNev()
-        {
-            return nev;
-        }
-
-        public int GetAr()
-        {
-            return ar;
-        }
-        public string GetKategoria()
-        {
-            return kategoria;
-        }
-
-        public void SetNev(string nev)
-        {
-            this.nev = nev;
-        }
-        public void SetAr(int ar)
-        {
-            this.ar = ar;
-        }
-        public void SetKategoria(string kategoria)
-        {
             this.kategoria = kategoria;
         }
     }

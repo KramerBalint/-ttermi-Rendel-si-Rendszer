@@ -32,7 +32,7 @@ namespace Éttermi_Rendelési_Rendszer
         {
             foreach (var elem in Menu)
             {
-                Console.WriteLine($"{elem.GetNev()} - {elem.GetAr()} Ft - {elem.GetKategoria()}");
+                Console.WriteLine($"{elem.nev} - {elem.ar} Ft - {elem.kategoria}");
             }
         }
 
