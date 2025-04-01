@@ -41,6 +41,7 @@ namespace Éttermi_Rendelési_Rendszer
             int osszeg = 0;
             rendeles.ForEach(x => osszeg += x.GetAr());
             Console.WriteLine("A rendelés összege: " + osszeg);
+            File.WriteAllText("rendelesek.txt", string.Empty);
             rendeles.Clear();
         }
     }
